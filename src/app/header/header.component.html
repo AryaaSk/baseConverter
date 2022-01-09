@@ -1,0 +1,12 @@
+<div class="main">
+    <form>
+        <span>Number: <input type="text" [(ngModel)]="dataservice.numToConvert" [ngModelOptions]="{standalone: true}"> </span>
+        <br>
+        <span>Current Base: <input type="text" [(ngModel)]="dataservice.currentBase" [ngModelOptions]="{standalone: true}"></span>
+        <br>
+        <span>Base to Convert To: <input type="text" [(ngModel)]="dataservice.baseToConvert" [ngModelOptions]="{standalone: true}"></span>
+        <br class="brModified">
+        <input type="submit" value="Convert" (click)="convertNumber()">
+        <br class="brModified">
+    </form>
+</div>

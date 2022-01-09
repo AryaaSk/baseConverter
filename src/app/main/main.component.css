@@ -1,0 +1,45 @@
+::ng-deep :root{
+    --borderColour: red;
+    --backgroundColour: lightPink;
+}
+.container
+{
+    text-align: center;
+}
+.flexbox
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.digitGrid
+{
+    height: max-content;
+    width: max-content;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+    border-left: 1px solid var(--borderColour);
+    border-top: 1px solid var(--borderColour);
+}
+.gridChild
+{
+    border-bottom: 1px solid var(--borderColour);
+
+    background-color: var(--backgroundColour);
+}
+.digitGrid:last-child
+{
+    border-right: 1px solid var(--borderColour);
+}
+
+
+.text
+{
+    margin: 30px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 125px;
+}   

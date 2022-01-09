@@ -1,0 +1,13 @@
+<div class="container">
+    <h3 *ngIf="dataservice.result.length == 0">Click convert to see the results</h3>
+    <h3 *ngIf="dataservice.result.length != 0" style="margin-bottom: 5px;">Base 10 Conversions:</h3> <!-- Gets the width of the flexbox after it is initialised, however it runs 4 times -->
+    <div class="flexbox" id="numberGridFlexbox">
+        <div class="digitGrid" *ngFor="let result of dataservice.result; let i = index">
+            <div class="gridChild"> <h3 class="text">{{dataservice.baseToConvertPublic}}<sup style="font-size: 75px;">{{dataservice.result.length - i - 1}}</sup></h3></div> <!-- First div represents the places values, e.g. binary would be 8, 4, 2, 1 -->
+            <div class="gridChild"> <h3 class="text">{{result}}</h3></div> <!-- Second div represents the actual number -->
+        </div>
+    </div>
+    <div *ngIf="dataservice.result.length != 0">{{calculateZoom()}}</div>
+    <h3>Made by Aryaa Sk</h3>
+
+</div>

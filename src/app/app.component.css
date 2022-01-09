@@ -1,0 +1,5 @@
+.container
+{
+    width: max-content;
+    margin: 0 auto; /* when using text-align: center with a width constraint, it doesnt work properly, so use this instead */
+}

@@ -1,0 +1,11 @@
+.main
+{
+    text-align: center;
+}
+.brModified
+{
+    content: "";
+    margin: 2em;
+    display: block;
+    font-size: 5px; /*use this to control spacing */
+}
