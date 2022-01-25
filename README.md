@@ -1,4 +1,4 @@
-A website that allows you to convert numbers in one base to another base, e.g. FF(base 16) -> 255(base 10)
+A website that allows you to convert numbers in one base to another base, e.g. FF(base 16) -> 255(base 10), and shows a table to explain how different bases work
 
 Here is the URL: https://angularbaseconverter.azurewebsites.net
 
